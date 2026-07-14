@@ -20,7 +20,12 @@ app.use(express.urlencoded({ extended: true }));
 const routes = require('./src/routes');
 app.use('/', routes);
 
-// Khởi chạy server
-app.listen(PORT, () => {
-  console.log(`Server đang chạy tại http://localhost:${PORT}`);
-});
+// Khởi chạy server cục bộ (khi chạy local bằng node/nodemon)
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Server đang chạy tại http://localhost:${PORT}`);
+  });
+}
+
+// Export app để Vercel Serverless Functions nhận diện và xử lý
+module.exports = app;
