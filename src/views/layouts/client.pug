@@ -1,0 +1,32 @@
+doctype html
+html(lang="vi")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title || 'Hôn Nhân Hạnh Phúc'}
+    meta(name="description" content=description)
+    // Tích hợp Tailwind CSS CDN trực tiếp
+    script(src="https://cdn.tailwindcss.com")
+  body.bg-slate-50.text-slate-900.font-sans
+    // Header chung
+    header(class="bg-white shadow-sm sticky top-0 z-50")
+      div(class="container mx-auto px-6 py-4 flex justify-between items-center")
+        a(href="/" class="text-2xl font-extrabold text-rose-600 tracking-wide")
+          | Hôn Nhân Hạnh Phúc
+        nav(class="hidden md:flex space-x-8 font-medium text-slate-600")
+          a(href="#features" class="hover:text-rose-600 transition") Tính năng
+          a(href="#stories" class="hover:text-rose-600 transition") Câu chuyện
+          a(href="#contact" class="hover:text-rose-600 transition") Đăng ký tư vấn
+        a(href="#contact" class="bg-rose-600 hover:bg-rose-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-md transition")
+          | Kết nối ngay
+
+    // Điểm chèn nội dung của từng trang con
+    block content
+
+    // Footer chung
+    footer(class="bg-slate-900 text-slate-400 py-12 mt-20")
+      div(class="container mx-auto px-6 text-center")
+        p(class="text-white font-bold text-lg mb-4") Hôn Nhân Hạnh Phúc
+        p(class="text-sm") Kiến tạo tổ ấm bền vững cùng các chuyên gia hàng đầu.
+        div(class="mt-8 border-t border-slate-800 pt-8 text-xs")
+          | &copy; 2026 Hôn Nhân Hạnh Phúc. All rights reserved.

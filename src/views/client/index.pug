@@ -1,0 +1,453 @@
+extends ../layouts/client
+
+block content
+  // Tùy chỉnh màu sắc chủ đạo tinh tế: ấm áp, chữa lành, thấu cảm (Chủ đạo: Slate, Rose, Amber)
+  main(class="min-h-screen bg-slate-50")
+
+    // ==========================================
+    // SECTION 1 — HERO
+    // ==========================================
+    section(class="relative py-20 lg:py-32 bg-gradient-to-br from-rose-50 via-stone-50 to-amber-50 overflow-hidden")
+      // Decorative elements
+      div(class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-400 via-pink-400 to-amber-400")
+      div(class="absolute -top-20 -left-20 w-80 h-80 bg-rose-200 rounded-full filter blur-3xl opacity-30")
+      div(class="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-200 rounded-full filter blur-3xl opacity-30")
+      
+      div(class="container mx-auto px-6 relative z-10")
+        div(class="max-w-4xl mx-auto text-center space-y-8")
+          div(class="inline-flex items-center gap-2 bg-rose-100 text-rose-800 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide")
+            span(class="w-2.5 h-2.5 bg-rose-500 rounded-full")
+            span Hành trình 7 ngày hàn gắn & kiến tạo hạnh phúc
+          
+          h1(class="text-3xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight")
+            | Có thể bạn không cần một cuộc hôn nhân mới.
+            span(class="block text-rose-600 mt-3 font-extrabold text-2xl md:text-4xl")
+              | Bạn chỉ cần học cách yêu lại người mình đã chọn.
+          
+          // Thấu cảm dẫn dắt
+          div(class="max-w-2xl mx-auto space-y-4 text-slate-600 text-base md:text-lg leading-relaxed")
+            p Có những cặp vợ chồng vẫn ở cạnh nhau mỗi ngày... Nhưng nhiều tháng rồi không còn một cuộc trò chuyện thật sự.
+            p Có những người vẫn gọi nhau là "vợ", là "chồng"... Nhưng cảm giác như đang sống cùng một người xa lạ.
+            p(class="font-medium text-rose-600 italic") Không phải vì hết yêu.
+            p Mà vì cuộc sống, áp lực, công việc và những tổn thương chưa được chữa lành đã khiến hai người dần mất kết nối.
+          
+          p(class="text-lg font-bold text-slate-800 max-w-xl mx-auto")
+            | Chương trình "7 Ngày Kiến Tạo Hôn Nhân Hạnh Phúc" được thiết kế để giúp bạn tìm lại sự gắn kết, thấu hiểu và bình yên trong chính mái ấm của mình.
+
+          div(class="pt-4")
+            a(href="#contact" class="inline-flex items-center justify-center bg-rose-600 hover:bg-rose-700 text-white text-lg font-extrabold px-10 py-5 rounded-2xl shadow-xl shadow-rose-200 transition-all duration-300 transform hover:-translate-y-1")
+              | Bắt đầu hành trình ngay hôm nay
+              svg(class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+                path(stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3")
+
+
+    // ==========================================
+    // SECTION 2 — KHI HÔN NHÂN KHÔNG CÒN NHƯ ĐẦU
+    // ==========================================
+    section(class="py-20 bg-white")
+      div(class="container mx-auto px-6 max-w-4xl")
+        div(class="text-center space-y-4")
+          h2(class="text-3xl font-bold text-slate-900") Khi Hôn Nhân Không Còn Như Những Ngày Đầu...
+          div(class="w-12.5 h-1 bg-rose-500 mx-auto rounded-full")
+        
+        div(class="grid md:grid-cols-3 gap-8 mt-12")
+          div(class="bg-rose-50 p-8 rounded-2xl border border-rose-100 space-y-4 text-center")
+            div(class="text-4xl") 🍽️
+            p(class="text-slate-700 font-medium") Có bao lâu rồi hai người chưa cùng nhau ăn một bữa cơm thật sự vui vẻ?
+          div(class="bg-rose-50 p-8 rounded-2xl border border-rose-100 space-y-4 text-center")
+            div(class="text-4xl") 🗣️
+            p(class="text-slate-700 font-medium") Có bao lâu rồi bạn không còn kể cho người kia nghe về một ngày của mình?
+          div(class="bg-rose-50 p-8 rounded-2xl border border-rose-100 space-y-4 text-center")
+            div(class="text-4xl") 💔
+            p(class="text-slate-700 font-medium") Có bao lâu rồi những lời động viên được thay bằng những lời trách móc?
+
+        div(class="mt-12 bg-slate-50 p-8 rounded-2xl border border-slate-100 max-w-2xl mx-auto text-center space-y-4")
+          p(class="text-slate-700") Bạn không muốn cãi nhau. Nhưng mỗi cuộc nói chuyện đều dễ trở thành tranh luận.
+          p(class="text-slate-700") Bạn không muốn im lặng. Nhưng lại không biết phải bắt đầu từ đâu.
+          p(class="text-lg font-bold text-rose-600") Đó là điều xảy ra với rất nhiều cuộc hôn nhân.
+          p(class="text-sm text-slate-500") Không phải vì họ thiếu tình yêu. Mà vì họ chưa biết cách giữ tình yêu luôn lớn hơn những áp lực của cuộc sống.
+
+
+    // ==========================================
+    // SECTION 3 — MỘT CUỘC HÔN NHÂN KHÔNG BẰNG MAY MẮN
+    // ==========================================
+    section(class="py-20 bg-gradient-to-b from-white to-slate-50")
+      div(class="container mx-auto px-6 max-w-4xl")
+        div(class="bg-slate-900 text-white p-8 md:p-16 rounded-3xl shadow-2xl relative overflow-hidden")
+          div(class="absolute top-0 right-0 w-32 h-32 bg-rose-500 rounded-full filter blur-3xl opacity-20")
+          
+          div(class="relative z-10 space-y-8")
+            div(class="text-center space-y-2")
+              h2(class="text-2xl md:text-3xl font-bold") Một Cuộc Hôn Nhân Hạnh Phúc Không Được Xây Dựng Bằng May Mắn
+              p(class="text-rose-400 font-medium") Nó được tạo nên từ những điều rất nhỏ mỗi ngày
+            
+            div(class="grid sm:grid-cols-2 gap-4 pt-4")
+              div(class="flex items-start gap-3")
+                span(class="text-rose-500 text-xl") ✓
+                p(class="text-slate-300") Một lời cảm ơn đúng thời điểm.
+              div(class="flex items-start gap-3")
+                span(class="text-rose-500 text-xl") ✓
+                p(class="text-slate-300") Một cái ôm siết chặt đúng lúc.
+              div(class="flex items-start gap-3")
+                span(class="text-rose-500 text-xl") ✓
+                p(class="text-slate-300") Một cuộc trò chuyện không phán xét.
+              div(class="flex items-start gap-3")
+                span(class="text-rose-500 text-xl") ✓
+                p(class="text-slate-300") Một lần biết lắng nghe thay vì phản ứng.
+              div(class="flex items-start gap-3")
+                span(class="text-rose-500 text-xl") ✓
+                p(class="text-slate-300") Một sự bao dung nhiều hơn một chút.
+            
+            div(class="text-center pt-6 border-t border-slate-800")
+              p(class="text-lg font-bold text-white")
+                | "Hạnh phúc không nằm ở việc hai người không bao giờ mâu thuẫn. Mà nằm ở việc sau mỗi mâu thuẫn, hai người vẫn muốn nắm tay nhau bước tiếp."
+
+
+    // ==========================================
+    // SECTION 4 & 5 — KHÔNG PHẢI KHÓA HỌC / TRẢI NGHIỆM ĐẶC BIỆT
+    // ==========================================
+    section(class="py-20 bg-white")
+      div(class="container mx-auto px-6 max-w-5xl")
+        div(class="grid md:grid-cols-2 gap-12 items-center")
+          div(class="space-y-6")
+            div(class="inline-block bg-amber-100 text-amber-900 px-3 py-1 rounded-md text-xs font-bold uppercase") Đây không phải khóa học
+            h2(class="text-3xl font-bold text-slate-900") Đây Là Một Hành Trình Trải Nghiệm
+            p(class="text-slate-600 leading-relaxed")
+              | Trong 7 ngày, bạn sẽ từng bước nhìn lại chính cuộc hôn nhân của mình. Hiểu điều gì đang khiến hai người xa nhau, hiểu điều gì khiến những cuộc trò chuyện trở nên nặng nề và thấu cảm điều người bạn đời thật sự cần nhưng chưa từng nói ra.
+            p(class="text-slate-600 font-bold")
+              | Quan trọng hơn... Bạn sẽ biết cách thay đổi bằng những hành động rất nhỏ nhưng tạo nên khác biệt rất lớn.
+          
+          div(class="bg-rose-50/50 p-8 rounded-3xl border border-rose-100 space-y-6")
+            h3(class="text-xl font-bold text-slate-800") Bạn sẽ trải nghiệm điều gì mỗi ngày?
+            p(class="text-slate-600") Không phải những bài giảng lý thuyết kéo dài hàng giờ khó áp dụng. Mỗi ngày bạn chỉ cần dành khoảng 20–30 phút cho:
+            
+            ul(class="space-y-4")
+              li(class="flex items-center gap-3")
+                span(class="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-bold") 1
+                span(class="text-slate-700 font-medium") Một bài học ngắn tập trung
+              li(class="flex items-center gap-3")
+                span(class="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-bold") 2
+                span(class="text-slate-700 font-medium") Một bài tập thực tế áp dụng ngay
+              li(class="flex items-center gap-3")
+                span(class="w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-bold") 3
+                span(class="text-slate-700 font-medium") Một thử thách nhỏ tạo thay đổi lớn
+            
+            p(class="text-rose-600 font-semibold italic pt-2")
+              | Sau 7 ngày, bạn sẽ nhìn cuộc hôn nhân của mình bằng một góc nhìn hoàn toàn khác.
+
+
+    // ==========================================
+    // SECTION 6 — LỘ TRÌNH CHUYỂN HÓA
+    // ==========================================
+    section(class="py-20 bg-slate-50")
+      div(class="container mx-auto px-6")
+        div(class="text-center max-w-2xl mx-auto space-y-4")
+          h2(class="text-3xl font-bold text-slate-900") Lộ Trình Chuyển Hóa 7 Ngày
+          p(class="text-slate-500") Từng bước khoa học giúp thay đổi sâu sắc từ nhận thức đến hành động
+        
+        div(class="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto relative")
+          // Step 1
+          div(class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative")
+            div(class="absolute -top-6 left-8 w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg") 01
+            h3(class="text-xl font-bold text-slate-900 mt-4 mb-3") Giai đoạn 1: HIỂU
+            p(class="text-slate-600 text-sm leading-relaxed")
+              | Thấu hiểu chính bản thân mình trước tiên, hiểu người bạn đời và tìm ra nguyên nhân gốc rễ thật sự tạo nên những khoảng cách vô hình.
+          
+          // Step 2
+          div(class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative")
+            div(class="absolute -top-6 left-8 w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg") 02
+            h3(class="text-xl font-bold text-slate-900 mt-4 mb-3") Giai đoạn 2: KẾT NỐI
+            p(class="text-slate-600 text-sm leading-relaxed")
+              | Học kỹ năng giao tiếp không bạo lực, lắng nghe thấu cảm, mở lòng chia sẻ để khôi phục sự gần gũi như những ngày đầu.
+          
+          // Step 3
+          div(class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative")
+            div(class="absolute -top-6 left-8 w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg") 03
+            h3(class="text-xl font-bold text-slate-900 mt-4 mb-3") Giai đoạn 3: ĐỒNG HÀNH
+            p(class="text-slate-600 text-sm leading-relaxed")
+              | Cùng nhau xây dựng những thói quen tích cực mới, thiết lập mục tiêu chung và duy trì ngọn lửa yêu thương lâu dài, bền vững.
+
+
+    // ==========================================
+    // SECTION 7 — ĐIỀU GÌ KHIẾN CHƯƠNG TRÌNH KHÁC BIỆT
+    // ==========================================
+    section(class="py-20 bg-white")
+      div(class="container mx-auto px-6 max-w-4xl")
+        div(class="grid md:grid-cols-2 gap-12 items-center")
+          div(class="space-y-6")
+            h2(class="text-3xl font-bold text-slate-900") Điều Gì Khiến Chương Trình Này Khác Biệt?
+            p(class="text-slate-600")
+              | Rất nhiều người biết rằng cần phải yêu thương nhau hơn. Nhưng cực kỳ ít người biết phải bắt đầu từ đâu và thực hành thế nào.
+            p(class="text-slate-600")
+              | Chương trình này không đưa ra những lời khuyên lý thuyết chung chung, sáo rỗng. Mọi nội dung đều hướng tới sự thay đổi thực tế nhanh chóng.
+          
+          div(class="space-y-4")
+            div(class="flex gap-4 p-4 bg-rose-50 rounded-xl border border-rose-100")
+              span(class="text-rose-600 text-xl font-bold") ✔
+              div
+                h4(class="font-bold text-slate-800") Thực hành ngay
+                p(class="text-sm text-slate-600") Các bài tập được phân nhỏ dễ làm.
+            div(class="flex gap-4 p-4 bg-rose-50 rounded-xl border border-rose-100")
+              span(class="text-rose-600 text-xl font-bold") ✔
+              div
+                h4(class="font-bold text-slate-800") Áp dụng ngay
+                p(class="text-sm text-slate-600") Phù hợp với nhịp sống bận rộn.
+            div(class="flex gap-4 p-4 bg-rose-50 rounded-xl border border-rose-100")
+              span(class="text-rose-600 text-xl font-bold") ✔
+              div
+                h4(class="font-bold text-slate-800") Thay đổi ngay
+                p(class="text-sm text-slate-600") Tác động trực tiếp vào cách ứng xử hàng ngày.
+
+
+    // ==========================================
+    // SECTION 8 — SAU 7 NGÀY, ĐIỀU GÌ THAY ĐỔI
+    // ==========================================
+    section(class="py-20 bg-gradient-to-br from-rose-50/50 to-slate-100")
+      div(class="container mx-auto px-6 max-w-4xl text-center")
+        h2(class="text-3xl font-bold text-slate-900") Sau 7 Ngày, Điều Gì Có Thể Thay Đổi?
+        div(class="w-12 h-1 bg-rose-500 mx-auto rounded-full mt-4 mb-12")
+        
+        div(class="grid sm:grid-cols-2 gap-6 text-left")
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Hai người trò chuyện cởi mở với nhau nhiều hơn.
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Tần suất những cuộc cãi vã giảm đi rõ rệt.
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Bạn hiểu và cảm thông sâu sắc cho cảm xúc đối phương.
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Người bạn đời cảm nhận rõ rệt họ được lắng nghe.
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Không khí gia đình trở nên nhẹ nhàng, ấm cúng.
+          div(class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-3")
+            span(class="text-green-500 text-xl") ✨
+            p(class="text-slate-700 font-medium") Con cái lớn lên vui vẻ trong môi trường tích cực.
+        
+        p(class="text-lg font-bold text-rose-600 mt-12")
+          | "Và quan trọng nhất... Bạn không còn cảm thấy cô đơn trong chính cuộc hôn nhân của mình."
+
+
+    // ==========================================
+    // SECTION 9 — AI SẼ ĐỒNG HÀNH CÙNG BẠN?
+    // ==========================================
+    section(class="py-20 bg-white")
+      div(class="container mx-auto px-6 max-w-4xl text-center")
+        h2(class="text-3xl font-bold text-slate-900") Người Bạn Đồng Hành Cùng Bạn
+        p(class="text-slate-500 mt-3") Không chỉ có bài giảng tự học, chúng tôi luôn ở bên bạn.
+        
+        div(class="grid md:grid-cols-2 gap-8 mt-12 text-left")
+          div(class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-4")
+            div(class="text-4xl") 🤝
+            h3(class="text-xl font-bold text-slate-800") Đội ngũ Mentor hỗ trợ sát sao
+            p(class="text-slate-600 text-sm")
+              | Lắng nghe, giải đáp các thắc mắc riêng tư, định hướng bài tập và cùng bạn tháo gỡ những khúc mắc khó nói suốt 7 ngày.
+            p(class="text-rose-600 text-sm.font-semibold")
+              | Giúp bạn nhìn ra những điểm mù mà đôi khi chính người trong cuộc cũng chưa từng nhận ra.
+          
+          div(class="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-center items-center text-center space-y-4")
+            div(class="w-24 h-24 bg-rose-100 rounded-full flex items-center justify-center text-4xl") ❤️
+            div
+              h4(class="font-bold text-slate-800") Chuyên gia tư vấn & Ban cố vấn
+              p(class="text-xs text-slate-400") Hơn 10 năm kinh nghiệm trong trị liệu tâm lý gia đình tại Việt Nam.
+
+
+    // ==========================================
+    // SECTION 10 — NHỮNG CÂU CHUYỆN ĐÃ ĐƯỢC VIẾT LẠI
+    // ==========================================
+    section(class="py-20 bg-slate-50")
+      div(class="container mx-auto px-6 max-w-4xl text-center")
+        h2(class="text-3xl font-bold text-slate-900") Những Câu Chuyện Đã Được Viết Lại
+        p(class="text-slate-500 mt-3") Chia sẻ chân thực từ những người từng muốn buông tay nhưng đã chọn cách thấu hiểu
+        
+        div(class="grid md:grid-cols-2 gap-8 mt-12")
+          div(class="bg-white p-8 rounded-2xl shadow-sm text-left space-y-4 border border-slate-100")
+            p(class="text-slate-600 italic")
+              | "Chúng tôi từng nghĩ ly hôn là giải pháp duy nhất sau 3 năm im lặng. Nhờ thử thách 7 ngày này, tôi nhận ra chồng mình cũng có những áp lực khủng khiếp mà anh ấy giấu kín."
+            h4(class="font-bold text-slate-800") Chị Thu Trang (32 tuổi, Hà Nội)
+          
+          div(class="bg-white p-8 rounded-2xl shadow-sm text-left space-y-4 border border-slate-100")
+            p(class="text-slate-600 italic")
+              | "Chỉ một người thay đổi trước, cả cuộc hôn nhân sẽ xoay chuyển. Khóa học đã hướng dẫn tôi cách hạ cái tôi xuống và chủ động lắng nghe vợ mình."
+            h4(class="font-bold text-slate-800") Anh Quốc Bảo (35 tuổi, TP. HCM)
+
+
+    // ==========================================
+    // SECTION 11 & 12 & 13 — THÔNG TIN CHI TIẾT
+    // ==========================================
+    section(class="py-20 bg-white")
+      div(class="container mx-auto px-6 max-w-5xl")
+        div(class="text-center space-y-4 mb-16")
+          h2(class="text-3xl font-bold text-slate-900") Đừng Để Quá Muộn Để Hành Động
+          p(class="text-slate-500") Hôn nhân hiếm khi đổ vỡ sau một ngày - Nó bắt đầu từ những sự xa cách rất nhỏ mỗi ngày.
+
+        div(class="grid md:grid-cols-2 gap-12")
+          // Phù hợp
+          div(class="bg-emerald-50/50 p-8 rounded-3xl border border-emerald-100 space-y-6")
+            h3(class="text-xl font-bold text-emerald-900 flex items-center gap-2")
+              span ✓
+              | Chương trình này dành cho bạn nếu:
+            ul(class="space-y-3 text-slate-700")
+              li(class="flex items-start gap-2")
+                span(class="text-emerald-600 font-bold") •
+                | Bạn tha thiết muốn giữ gìn gia đình hạnh phúc.
+              li(class="flex items-start gap-2")
+                span(class="text-emerald-600 font-bold") •
+                | Vợ chồng bạn đang cảm giác dần mất đi kết nối, ít nói chuyện.
+              li(class="flex items-start gap-2")
+                span(class="text-emerald-600 font-bold") •
+                | Mong muốn tìm cách chữa lành, hàn gắn sâu sắc sau mâu thuẫn.
+              li(class="flex items-start gap-2")
+                span(class="text-emerald-600 font-bold") •
+                | Mong muốn học cách thấu hiểu và yêu thương đúng cách.
+          
+          // Không phù hợp
+          div(class="bg-rose-50/50 p-8 rounded-3xl border border-rose-100 space-y-6")
+            h3(class="text-xl font-bold text-rose-900 flex items-center gap-2")
+              span ✕
+              | Chương trình KHÔNG phù hợp nếu:
+            ul(class="space-y-3 text-slate-700")
+              li(class="flex items-start gap-2")
+                span(class="text-rose-600 font-bold") •
+                | Bạn chỉ muốn đăng ký nghe lý thuyết suông mà không thực hành.
+              li(class="flex items-start gap-2")
+                span(class="text-rose-600 font-bold") •
+                | Bạn chưa sẵn sàng nhìn nhận lại và thay đổi bản thân mình.
+              li(class="flex items-start gap-2")
+                span(class="text-rose-600 font-bold") •
+                | Bạn muốn đối phương phải tự thay đổi trước khi bạn hành động.
+
+
+    // ==========================================
+    // SECTION 14 — KHI THAM GIA, BẠN NHẬN ĐƯỢC
+    // ==========================================
+    section(class="py-20 bg-slate-50")
+      div(class="container mx-auto px-6 max-w-4xl text-center")
+        h2(class="text-3xl font-bold text-slate-900") Giá Trị Bạn Nhận Được Khi Tham Gia
+        p(class="text-slate-500 mt-3") Trọn bộ giải pháp đồng hành giúp bạn tối ưu hóa kết quả
+        
+        div(class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12")
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 📚
+            h4(class="font-bold text-slate-800") Lộ trình 7 ngày học
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 📝
+            h4(class="font-bold text-slate-800") Bài tập ứng dụng thực tế
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 📁
+            h4(class="font-bold text-slate-800") Bộ tài liệu thực hành
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 👥
+            h4(class="font-bold text-slate-800") Mentor đồng hành 1:1
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 💬
+            h4(class="font-bold text-slate-800") Cộng đồng học viên chia sẻ
+          div(class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2")
+            div(class="text-3xl") 🗣️
+            h4(class="font-bold text-slate-800") 1 Phiên tư vấn chuyên sâu
+
+
+    // ==========================================
+    // SECTION 15 & 16 — ĐĂNG KÝ (CTA CUỐI)
+    // ==========================================
+    section(class="py-20 bg-gradient-to-br from-rose-50 via-white to-amber-50")
+      div(class="container mx-auto px-6 max-w-4xl")
+        div(class="text-center space-y-4 mb-12")
+          h2(class="text-3xl font-bold text-slate-900") Đầu Tư Cho Hạnh Phúc Gia Đình
+          p(class="text-slate-600 max-w-lg mx-auto")
+            | "Một cuộc hôn nhân đẹp không phải là cuộc hôn nhân không có sóng gió. Mà là cuộc hôn nhân mà sau mỗi cơn sóng, hai người vẫn chọn nắm tay nhau."
+          p(class="text-sm text-rose-600 font-semibold")
+            | Hãy dành 7 ngày để đầu tư cho điều quý giá nhất cuộc đời bạn: Gia đình.
+        
+        div(class="bg-white rounded-3xl shadow-2xl overflow-hidden grid md:grid-cols-5 border border-slate-100")
+          div(class="md:col-span-2 bg-slate-900 text-white p-8 md:p-12 flex flex-col justify-between relative")
+            div(class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-500 to-amber-500")
+            div(class="space-y-6")
+              h3(class="text-2xl font-bold") Đăng Ký Tham Gia
+              p(class="text-slate-400 text-sm") Có lẽ người bạn đời của bạn không cần một món quà đắt tiền. Họ chỉ cần một phiên bản tốt hơn của chính bạn.
+              p(class="text-amber-400 font-semibold") Đừng chờ đến khi phải hối tiếc mới bắt đầu.
+            div(class="text-xs text-slate-400 space-y-2 pt-8")
+              p 📞 Hỗ trợ nhanh: 1900 xxxx
+              p ✉️ Email hỗ trợ: hotro@honnhanhanhphuc.vn
+          
+          div(class="md:col-span-3 p-8 md:p-12")
+            form#contactForm(class="space-y-5")
+              div
+                label(class="block text-xs.font-bold.uppercase.tracking-wide.text-slate-500.mb-2") Họ và Tên của bạn
+                input#name(class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 transition" type="text" placeholder="Ví dụ: Nguyễn Văn A" required)
+              
+              div(class="grid grid-cols-1 sm:grid-cols-2 gap-4")
+                div
+                  label(class="block text-xs.font-bold.uppercase.tracking-wide.text-slate-500.mb-2") Số điện thoại
+                  input#phone(class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 transition" type="tel" placeholder="09xxxxxxx" required)
+                div
+                  label(class="block text-xs.font-bold.uppercase.tracking-wide.text-slate-500.mb-2") Địa chỉ Email (nếu có)
+                  input#email(class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 transition" type="email" placeholder="name@example.com")
+              
+              div
+                label(class="block text-xs.font-bold.uppercase.tracking-wide.text-slate-500.mb-2") Vấn đề bạn đang mong muốn giải quyết
+                textarea#message(class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 transition h-24" placeholder="Ví dụ: Vợ chồng ít nói chuyện, mâu thuẫn tài chính, quan điểm nuôi dạy con cái..." required)
+              
+              div(class="flex flex-col gap-3 pt-2")
+                button#btnPrimary(class="w-full bg-rose-600 hover:bg-rose-700 text-white py-3.5 rounded-xl font-bold shadow-lg shadow-rose-100 transition duration-300" type="submit")
+                  | Tôi muốn bắt đầu hành trình 7 ngày
+                button#btnSecondary(class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 py-3 rounded-xl font-semibold transition duration-300" type="button")
+                  | Đăng ký tư vấn cùng Mentor
+            
+            div#responseMsg(class="mt-4 hidden p-4 rounded-xl text-center font-semibold")
+
+  script.
+    // Lắng nghe hành vi form
+    const form = document.getElementById('contactForm');
+    const responseMsg = document.getElementById('responseMsg');
+    
+    // Gửi dạng đăng ký chính hoặc phụ
+    const sendData = async (type) => {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (!name || !phone || !message) {
+        alert('Vui lòng điền đầy đủ thông tin bắt buộc.');
+        return;
+      }
+
+      const data = { name, phone, email, message, registerType: type };
+      
+      try {
+        const response = await fetch('/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        responseMsg.classList.remove('hidden', 'bg-red-100', 'text-red-800', 'bg-green-100', 'text-green-800');
+        if (result.status === 'success') {
+          responseMsg.classList.add('bg-green-100', 'text-green-800');
+          responseMsg.innerText = result.message + ` (${type === 'primary' ? 'Đăng ký hành trình 7 ngày' : 'Yêu cầu tư vấn Mentor'})`;
+          form.reset();
+        } else {
+          responseMsg.classList.add('bg-red-100', 'text-red-800');
+          responseMsg.innerText = 'Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.';
+        }
+      } catch (err) {
+        responseMsg.classList.remove('hidden');
+        responseMsg.classList.add('bg-red-100', 'text-red-800');
+        responseMsg.innerText = 'Không kết nối được đến máy chủ.';
+      }
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      sendData('primary');
+    });
+
+    document.getElementById('btnSecondary').addEventListener('click', () => {
+      sendData('mentor');
+    });

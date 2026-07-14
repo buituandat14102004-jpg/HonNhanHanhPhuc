@@ -1,0 +1,50 @@
+extends ../layouts/admin
+
+block content
+  div.space-y-6
+    div.grid.grid-cols-1.md_grid-cols-3.gap-6
+      // Thống kê tổng quan
+      div.bg-white.p-6.rounded-2xl.shadow-sm.border.border-slate-100.flex.items-center.justify-between
+        div.space-y-2
+          p.text-sm.text-slate-500.font-medium Tổng lượt đăng ký
+          p.text-3xl.font-black.text-slate-900 128
+        span.text-3xl.p-3.bg-rose-50.rounded-xl 📈
+      
+      div.bg-white.p-6.rounded-2xl.shadow-sm.border.border-slate-100.flex.items-center.justify-between
+        div.space-y-2
+          p.text-sm.text-slate-500.font-medium Cần xử lý
+          p.text-3xl.font-black.text-slate-900 5
+        span.text-3xl.p-3.bg-amber-50.rounded-xl ⏳
+      
+      div.bg-white.p-6.rounded-2xl.shadow-sm.border.border-slate-100.flex.items-center.justify-between
+        div.space-y-2
+          p.text-sm.text-slate-500.font-medium Đã hoàn thành
+          p.text-3xl.font-black.text-slate-900 123
+        span.text-3xl.p-3.bg-green-50.rounded-xl.text-green-600.font-bold ✓
+
+    // Bảng danh sách liên hệ mẫu
+    div.bg-white.rounded-2xl.shadow-sm.border.border-slate-100.overflow-hidden
+      div.p-6.border-b.border-slate-100.flex.justify-between.items-center
+        h3.font-bold.text-slate-800 Danh sách đăng ký tư vấn gần đây
+        button.text-rose-600.hover_underline.text-sm.font-semibold Xem tất cả
+      div.overflow-x-auto
+        table.w-full.text-left.border-collapse
+          thead.bg-slate-50.text-slate-500.text-xs.font-bold.uppercase.tracking-wider
+            tr
+              th.py-4.px-6 Họ và tên
+              th.py-4.px-6 Số điện thoại
+              th.py-4.px-6 Trạng thái
+              th.py-4.px-6 Ngày đăng ký
+          tbody.text-sm.text-slate-600.divide-y.divide-slate-100
+            tr
+              td.py-4.px-6.font-semibold.text-slate-900 Nguyễn Văn A
+              td.py-4.px-6 0912 345 678
+              td.py-4.px-6
+                span.px-2.5.py-1.rounded-full.text-xs.font-bold.bg-amber-100.text-amber-800 Chờ liên hệ
+              td.py-4.px-6 14/07/2026
+            tr
+              td.py-4.px-6.font-semibold.text-slate-900 Trần Thị B
+              td.py-4.px-6 0987 654 321
+              td.py-4.px-6
+                span.px-2.5.py-1.rounded-full.text-xs.font-bold.bg-green-100.text-green-800 Đã tư vấn
+              td.py-4.px-6 13/07/2026
